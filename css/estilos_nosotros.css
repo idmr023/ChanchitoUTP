@@ -1,0 +1,79 @@
+.encabezado{
+    display: flex;
+    background-color: #00CA7B;
+}
+.encabezado__subtitulo{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #C7C1CE;
+    color: #232125;
+    display: inline-block;
+}
+
+.encabezado__img {
+    padding-top: 10px;
+    width: 45px; 
+    height: auto; 
+    border-radius: 50%; 
+}
+.contenedor-total{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px;
+}
+.contenedor-total img{
+    width: 35%;
+    margin-bottom: 15px;
+    position: relative;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 5px 10px 0px #949494;
+    border: 2px solid black;
+    border-radius: 10%;
+    border-color: #270541;
+    transition: all 0.3s ease;
+}
+.contenedor-total img:hover{
+    transform: scale(1.1);
+    border-radius: 15%;
+    transform: skew(1deg, 1deg);
+}
+
+/*Boton*/
+.informacionboton {
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    text-decoration: underline dotted whitesmoke;
+    border-radius: 5px;
+    border: thick double;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.informacionboton:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+.informacionboton:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+.informacion__titulo{
+    margin-left: 10px;
+    transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+.informacion__titulo:hover{
+    letter-spacing: 1px;
+    color: #481271;
+}

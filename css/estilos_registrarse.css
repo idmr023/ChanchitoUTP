@@ -1,0 +1,65 @@
+body{
+    background-color: var(--soft-green);
+    text-align: center;
+    margin: 0 auto;
+}
+.content{
+    max-width: 4600px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: #000;
+}
+.content h1{
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+.content span{
+    color: var(--black);
+    font-size: 65px
+}
+.form-container{
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+}
+.content .form-container form{
+    max-width: 450px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+form input{
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+.form input:focus{
+    outline: none;
+}
+@media (max-width: 1000px){
+    .form-container{
+        display: block;
+    }
+}

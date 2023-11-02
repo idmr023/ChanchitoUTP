@@ -1,0 +1,153 @@
+.hidden{
+  overflow: hidden;
+  z-index: -1;
+}
+.main{
+  background: var(--soft-green);
+  width: 100%;
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.main h1{
+  font-size: 50px;
+}
+.main span{
+  color: var(--black);
+  font-size: 65px
+}
+.container-tarjetas{
+  display: flex;
+}
+.tarjeta{
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: center;
+}
+.banner__beneficios{
+  background-color: var(--soft-red);
+  padding: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.banner__beneficios img{
+  max-width: 480px;
+  width: 100%;
+  max-height: 250px;
+  height: 100%;
+  margin: 20px auto;
+}
+.banner_registrate{
+  padding: 20px;
+}
+.boton{
+  border: 0;
+  width: 360px;
+  height: 60px;
+  font-size: 28px;
+  padding: 20px;
+  text-align: center;
+}
+.boton a{
+  color: #fff;
+}
+#input__msj{
+  background-color: var(--soft-red);
+  border-radius: 0px 6px 6px 0px;
+}
+#boton__info{
+  background-color: var(--soft-green);
+  border-radius: 6px 0px 0px 6px;
+}
+.centrado{
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@media (max-width: 768px) {
+  .boton{
+    margin-bottom: 20px;
+  }
+  .banner__regsitrate, .banner__regsitrate #boton__info {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .banner__registrate_botones{
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  body{
+    width: 50vh;
+  }
+  .boton{
+    width: 240px;
+    height: 60px;
+    font-size: 14px;
+  }
+}

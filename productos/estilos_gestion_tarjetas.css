@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.titulo-crud, .titulo-formulario .etiqueta-formulario{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.titulo-crud {
+    color: #333;
+    font-size: 24px;
+    /* Otros estilos */
+}
+
+.titulo-formulario {
+    color: #555;
+    font-size: 18px;
+    /* Otros estilos */
+}
+
+.etiqueta-formulario {
+    font-weight: bold;
+    /* Otros estilos */
+}
+.inputNo{
+    background-color: #e6e6e6;
+}
+.input-formulario {
+    padding: 1px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    /* Otros estilos */
+    margin-bottom: 10px;
+}
+
+.boton-formulario {
+    padding: 6px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Otros estilos */
+}
+
+.boton-generar{
+    padding: 6px 10px;
+    background-color: #4c56af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Otros estilos */
+}
+.boton-generar:hover{background-color: #31387a;}
+
+.division { 
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    padding: 5vh 0;
+}
+.tabla-tarjetas{
+    height: auto;
+    margin-bottom: 350px;
+}
+/*========= TARJETA VISUAL=========*/
+.tarjeta-conjunto {
+    display: flex;
+}
+
+.tarjeta-datos,
+.tarjeta-visual {
+    flex-basis: 50%;
+    flex-grow: 1;
+    height: auto;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    .tarjeta-conjunto {
+        flex-direction: column;
+    }
+
+    .tarjeta-datos,
+    .tarjeta-visual {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    .card-group {
+        top: 0;
+        transform: translate(-50%, +50%);
+    }
+}
+
+.card-group {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    position: relative;
+    margin-left: 50px;
+    height: 270px;
+    width: 450px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to right, rgb(50, 50, 161), rgb(57, 164, 190));
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.logo img,.chip img,.number,.name,.from,.to,.ring {
+    position: absolute;
+}
+
+.logo img {
+    top: 35px;
+    right: 40px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.chip img {
+    top: 120px;
+    left: 40px;
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.number,.name,.from,.to {
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.number {
+    left: 40px;
+    bottom: 65px;
+    font-family: "Nunito", sans-serif;
+}
+
+.name {
+font-size: 0.7rem;
+left: 40px;
+bottom: 35px;
+}
+
+.from {
+font-size: 0.7rem;
+bottom: 35px;
+right: 110px;
+}
+
+.to {
+font-size: 0.7rem;
+bottom: 35px;
+right: 40px;
+}
+.Contenido{
+position: relative;
+height: 270px;
+width: 450px;
+border-radius: 25px;
+background-color: rgb(63, 131, 66);
+margin: 0 auto;
+}
+/*===========================*/
+
+/*========Tabla========*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1psx solid #ffffff;
+    padding: 8px;
+}
+th {
+    background-color: #86ca97;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+form {
+    display: inline-block;
+}
+.actualizar {background-color: #4CAF50;}
+.actualizar:hover{background-color: #37813b;}
+
+.eliminar{background-color: #eb4c4c;}
+.eliminar:hover{background-color: #a13a3a;}
+
+/*========FIN Tabla========*/
+
+/* Estilos para los input */
+input[type="text"] {
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilos para los botones */
+input[type="submit"] {
+    padding: 6px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

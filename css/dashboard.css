@@ -1,0 +1,134 @@
+body {
+    background: #f1f1f1;
+    width: 100%;
+}
+
+.dropdown-menu {
+    margin: 17px;
+    background: #262a34;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+
+.menuperfil {
+    color: white;
+}
+
+.menuperfil:focus {
+    background: #23ae6b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+
+.cerrar:hover {
+    background-color: rgba(206, 65, 22, 0.877);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+
+.user {
+    font-size: 35px;
+}
+.contenedor__principal{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.barra-lateral {
+    display: flex;
+    background: #252121;
+    color: #fff;
+    max-width: 1200px;
+    width: auto;
+}
+
+.barra-lateral a {
+    color: #fff;
+}
+.barra-lateral .menu {
+    border-top: 5px #fff solid;
+}
+
+.barra-lateral .menu a {
+    display: block;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.barra-lateral .menu a i {
+    margin-right: 20px;
+}
+
+.barra-lateral .menu a:hover {
+    background-color: #003C5D;
+    text-decoration: none;
+}
+
+.active {
+    background: #003C5D;
+}
+
+.container__informacion{
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+.main .card{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card-body{
+    height: 100%;
+    max-height: 480px;
+}
+.table{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+@media (min-width: 768px) {
+    .barra-lateral{
+        min-height: 100vh;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .contenedor__principal{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .barra-lateral{
+        height: 100px;
+        position: top;
+
+    }
+    .barra-lateral .menu a{
+        display: inline-flex;
+    }
+}
+@media (max-width: 480px) {
+    body{
+      width: 50vh;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .table-dark td, .table-dark th, .table-dark thead th{
+        font-size: 12px;
+        width: 50px;
+    }
+  }
