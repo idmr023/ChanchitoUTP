@@ -13,7 +13,7 @@
 
     if($resultado){
         echo "<script> alert('Se ha registrado correctamente');
-        window.location = '/dashboard';
+        window.location = '/';
         </script>";
     } else{
         echo "<script> alert('No se ha registrado correctamente');
