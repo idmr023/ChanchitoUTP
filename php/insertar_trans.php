@@ -15,7 +15,7 @@
 
     if($resultado){
         echo "<script> alert('Se ha Transferido correctamente');
-        window.location = '/dashboard';
+        window.location = '/';
         </script>";
     } else{
         echo "<script> alert('No se ha transferido correctamente');
